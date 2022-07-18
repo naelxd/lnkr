@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/bin/bash
 
 file="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")/links.txt"
 
@@ -47,4 +47,3 @@ then
 else
     echo "lnkr -h To help"
 fi
-
