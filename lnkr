@@ -1,0 +1,50 @@
+#!usr/bin/env bash
+
+file="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")/links.txt"
+
+if [ $# == 0 ]
+then
+    i=0
+    links=()
+
+    echo "--------------- Saved Links ---------------"
+
+    while read -r line; do
+        if [ "$line" != "" ]; then
+            echo "$i - $line"
+            links+=("$line")
+            let i++
+        fi
+    done <$file
+
+    read -p "Open link number... " n
+    firefox ${links[n]} 
+elif [ $# == 1 ]
+then
+    if [ $1 == "-h" ]
+    then
+        echo "Usage:
+lnkr - open link
+lnkr[option] - use option 
+
+Options:
+    [-w] Write new link
+    [-w][link] Write link in filename"
+    elif [ $1 == "-w" ]
+    then
+        nvim $file
+    else
+        echo "lnkr -h To help" 
+    fi
+elif [ $# == 2 ]
+then
+    if [ $1 == "-w" ]
+    then
+        echo $2 >> $file
+    else
+        echo "lnkr -h To help"
+    fi
+else
+    echo "lnkr -h To help"
+fi
+
