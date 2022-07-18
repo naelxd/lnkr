@@ -5,9 +5,10 @@ Could be helpful for people using firefox with "clear hisory when firefox closes
 ### Usage
 You can use it as a bookmark manager for less important sites that you dont want to lose. 
 You can save sites which could be helpful in next few days.
+
 ---------------------------------------------------------
 To use you just need to start 'lnkr' file. <br/>
-[![Screenshot](/photos/screen.png)
+![Screenshot](/photos/screen.png)
 
 ```bash
 lnkr -h #for help
