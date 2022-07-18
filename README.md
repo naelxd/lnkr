@@ -10,3 +10,5 @@ cd lnkr
 ./lnkr
 ```
 You can add it in PATH (Optional)
+
+lnkr -h for help
