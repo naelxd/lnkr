@@ -1,9 +1,9 @@
 # Linker (LNKR)
 ## About Linker
-This app is using for saving links and open it in firefox from console.
+This app is using for saving links and open it in firefox from console. <br/>
 Could be helpful for people using firefox with "clear hisory when firefox closes" enabled.
 ### Usage
-You can use it as a bookmark manager for less important sites that you dont want to lose. 
+You can use it as a bookmark manager for less important sites that you dont want to lose. <br/>
 You can save sites which could be helpful in next few days.
 
 ---------------------------------------------------------
