@@ -1,6 +1,6 @@
 # Linker (LNKR)
 ## About Linker
-LNKR is a console appliocation to manage saving links and opening it in Firefox. <br/>
+LNKR is a console application to manage saving links and opening it in Firefox. <br/>
 ### Usage
 - Saving links outside your browser. <br/>
 - Quickly open saved websites through the console. <br/>
