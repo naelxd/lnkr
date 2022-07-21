@@ -1,20 +1,15 @@
 # Linker (LNKR)
 ## About Linker
-This app is using for saving links and open it in firefox from console. <br/>
-Could be helpful for people using firefox with "clear hisory when firefox closes" enabled.
+LNKR is a console appliocation to manage saving links and opening it in Firefox. <br/>
 ### Usage
-You can use it as a bookmark manager for less important sites that you dont want to lose. <br/>
-You can save sites which could be helpful in next few days.
+- Saving links outside your browser. <br/>
+- Quickly open saved websites through the console. <br/>
 
 ---------------------------------------------------------
 To use you just need to start 'lnkr' file. <br/>
 ![Screenshot](/photos/screen.png)
 
-```bash
-lnkr -h #for help
-```
-
-## How to install it
+## Installation
 ```bash
 git clone https://github.com/naelxd/lnkr.git
 cd lnkr
