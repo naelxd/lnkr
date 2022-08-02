@@ -7,6 +7,7 @@ LNKR is a console application to manage saving links and opening it in Firefox. 
 
 ---------------------------------------------------------
 To use you just need to start 'lnkr' file. <br/>
+**The link file is located at $HOME/.config/lnkr/links**
 ![Screenshot](/photos/screen.png)
 
 ## Installation

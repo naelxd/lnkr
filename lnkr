@@ -1,7 +1,23 @@
 #!/bin/bash
 
-file="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")/links.txt"
+#file="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")/links.txt"
+folder="$HOME/.config/lnkr"
+filename="links"
+file="$folder/$filename"
 
+# Create file with links
+if [[ ! -d $folder ]]
+then
+    mkdir -p $folder
+fi
+
+if [[ ! -f $file ]]
+then
+    touch $file
+    echo https://github.com/naelxd/lnkr > $file
+fi
+
+# Main functional
 if [ $# == 0 ]
 then
     i=0
