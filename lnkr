@@ -29,10 +29,28 @@ lnkr[option] - use option
 
 Options:
     [-w] Write new link
-    [-w][link] Write link in filename"
+    [-w][link] Write link in filename
+    [-d] Delete link"
     elif [ $1 == "-w" ]
     then
-        nvim $file
+        "${EDITOR:-vim}" $file
+    elif [ $1 == "-d" ]
+    then
+        i=0
+        links=()
+
+        echo "--------------- Saved Links ---------------"
+
+        while read -r line; do
+            if [ "$line" != "" ]; then
+                echo "$i - $line"
+                links+=("$line")
+                let i++
+            fi
+        done <$file
+
+        read -p "Delete link number... " n
+        sed -i /${links[n]}/d $file
     else
         echo "lnkr -h To help" 
     fi
