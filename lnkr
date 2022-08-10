@@ -34,7 +34,7 @@ then
     done <$file
 
     read -p "Open link number... " n
-    python -mwebbrowser ${links[n]} 
+    python -mwebbrowser ${links[n-1]} 
 elif [ $# == 1 ]
 then
     if [ $1 == "-h" ]
